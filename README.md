@@ -8,11 +8,16 @@ For this software module I used ot.js npm package for concurrency handling.
 * oAuth integration with Google API
 * Mugg Texteditor
 
+##What is OT
+Operational Transform (OT) is a algorithem used to resolve conflict of collaborative editing. Basically there are three action involve in this algorithem.
+* `Insert`
+* `Delete`
+* `Transformation`
+
 ## Installation
 * `git clone <repository-url>` this repository
 * change into the new directory
 * `npm install`
-
 
 ## Running / Development
 * `npm run dev`
