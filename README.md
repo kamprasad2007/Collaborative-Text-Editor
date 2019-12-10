@@ -12,7 +12,7 @@ For this software module I used ot.js npm package for concurrency handling.
 Operational Transform (OT) is a algorithem used to resolve conflict of collaborative editing. Basically there are three action involve in this algorithem.
 * `Insert`
 * `Delete`
-* `Transformation`
+* `Transformation` This Transformation divided into 4 major part to concat last two Insert and Delete operation.
 
 ## Installation
 * `git clone <repository-url>` this repository
