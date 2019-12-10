@@ -2,6 +2,9 @@
 This tool was developed as proof of concept. Operational Transform (OT) algorithm is used to concurrency control in collaborative editing of plain text documents. 
 
 ## Important
+Most important key takeaway is concurrency handling. When many users log into the system, possibility of overwriting other change may high. Operational Transform (OT) algorithm comes in handy to address that issue.
+* pug template engine use to generate UI.
+* oAuth integration with Google API
 
 
 ## Installation
