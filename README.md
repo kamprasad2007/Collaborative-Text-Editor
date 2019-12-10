@@ -1,5 +1,5 @@
 # Collaborative Text Editor
-This tool was developed as proof of concept for online collaborative text editing and Operational Transform (OT) algorithm is used to handle concurrency operation such as Insert, Delete or Transformation when conflict occurs. 
+This tool was developed as proof of concept for online collaborative text editing and Operational Transform (OT) algorithm is used to handle concurrency operation such as Insert, Delete or Transformation when conflict occurred. 
 
 ## Important
 Most important key takeaway is concurrency handling. When many users log into the system, chances of overwriting others changes are high. So Operational Transform (OT) algorithm comes in handy to address that issue.

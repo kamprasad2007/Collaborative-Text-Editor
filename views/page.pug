@@ -1,0 +1,26 @@
+extends layout
+
+block layout-content
+  div.View.UserView
+    h1.Banner Online Collaborative Text Editor
+    div.Message
+      div.Title
+        h3 Welcome #{userProfile.name}!
+        <img src=#{userProfile.picture} alt="Avatar" class="avatar"/>
+      div.Editor
+        <textarea id="note"></textarea>
+    div.NavButtons
+      a(href="#" onclick="logout()")
+        div.NavButton Log out
+  script(src="ot.js/text-operation.js")
+  script(src="ot.js/selection.js")
+  script(src="ot.js/wrapped-operation.js")
+  script(src="ot.js/undo-manager.js")
+  script(src="ot.js/client.js")
+  script(src="ot.js/codemirror-adapter.js")
+  script(src="ot.js/socketio-adapter.js")
+  script(src="ot.js/editor-client.js")
+  link(rel="stylesheet" href="../node_modules/codemirror/lib/codemirror.css")
+  script(src="../node_modules/codemirror/lib/codemirror.js")
+  script(src="../node_modules/socket.io-client/dist/socket.io.js")
+  script(src="page.js")

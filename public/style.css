@@ -95,6 +95,9 @@ a {
 
 .Message > .Title {
   padding-bottom: 20px;
+  float: left;
+  padding-right: 20px;
+  text-align: center;
 }
 
 .Message > .Details {
@@ -131,4 +134,19 @@ a {
 
   border-bottom: var(--ui-shawdow-border);
   box-shadow: var(--ui-shawdow);
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.CodeMirror{
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.Editor{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
 }
