@@ -24,7 +24,7 @@ Operational Transform (OT) is a algorithem used to resolve conflict of collabora
 * Visit your app at [http://localhost:3000](http://localhost:3000).
 
 ## Resources I used for this project
-* [Wiki for Operational Transform (OT) Agorithm)ttps://en.wikipedia.org/wiki/Operational_transformation)
+* [Wiki for Operational Transform (OT) Agorithm](https://en.wikipedia.org/wiki/Operational_transformation)
 * [OT.js GitHub](https://github.com/Operational-Transformation/ot.js/)
 * [OT visualization](http://operational-transformation.github.io/visualization.html)
 * [pugjs](https://pugjs.org/api/getting-started.html)
