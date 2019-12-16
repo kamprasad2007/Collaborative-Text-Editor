@@ -6,8 +6,6 @@
 const express = require("express");
 const path = require("path");
 const https = require('https');
-var EditorSocketIOServer = require('./public/ot.js/editor-socketio-server.js');
-var server = new EditorSocketIOServer("", [], 1);
 
 /**
  * App Variables
@@ -24,6 +22,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 app.use(express.static(path.join(__dirname, "public")));
 app.use('/node_modules', express.static('node_modules'));
+app.use('/ot.js', express.static('ot.js'));
 
 /**
  * Routes Definitions
@@ -69,11 +68,13 @@ app.get("/page", (req, res) => {
 /**
  * Server Activation
  */
-io.on('connection', function(socket) {
-    console.log("connected")
-    server.addClient(socket);
-});
-
 http.listen(port, () => {
     console.log(`Listening on http://localhost:${port}`);
+});
+
+var EditorSocketIOServer = require('./ot.js/editor-socketio-server.js');
+var server = new EditorSocketIOServer("", [], 1);
+
+io.on('connection', function(socket) {
+    server.addClient(socket);
 });
