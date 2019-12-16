@@ -76,5 +76,6 @@ var EditorSocketIOServer = require('./ot.js/editor-socketio-server.js');
 var server = new EditorSocketIOServer("", [], 1);
 
 io.on('connection', function(socket) {
+    console.log('ttttttt');
     server.addClient(socket);
 });

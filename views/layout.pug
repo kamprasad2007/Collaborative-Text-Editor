@@ -9,6 +9,17 @@ html
     title Online Collaborative Text Editor
     link(rel="stylesheet" href="/style.css")
     meta(name="google-signin-client_id", content="341722614946-leband5ooa13ptdibrm9hd839cqtn771.apps.googleusercontent.com")
+    script(src="ot.js/text-operation.js")
+    script(src="ot.js/selection.js")
+    script(src="ot.js/wrapped-operation.js")
+    script(src="ot.js/undo-manager.js")
+    script(src="ot.js/client.js")
+    script(src="ot.js/codemirror-adapter.js")
+    script(src="ot.js/socketio-adapter.js")
+    script(src="ot.js/editor-client.js")
+    link(rel="stylesheet" href="../node_modules/codemirror/lib/codemirror.css")
+    script(src="../node_modules/codemirror/lib/codemirror.js")
+    script(src="../node_modules/socket.io-client/dist/socket.io.js")
   body
     div#root
       block layout-content

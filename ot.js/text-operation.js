@@ -180,9 +180,6 @@ ot.TextOperation = (function () {
   // there's a mismatch between the input string and the operation.
   TextOperation.prototype.apply = function (str) {
     var operation = this;
-    console.log("XXXXXXXXXXXXX");
-    console.log(str);
-    console.log(operation);
     if (str.length !== operation.baseLength) {
       throw new Error("The operation's base length must be equal to the string's length.");
     }

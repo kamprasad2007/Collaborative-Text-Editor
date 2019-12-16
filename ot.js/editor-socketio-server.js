@@ -36,6 +36,8 @@ EditorSocketIOServer.prototype.addClient = function (socket) {
       clients: this.users
     })
     .on('operation', function (revision, operation, selection) {
+
+      console.log(operation)
       self.mayWrite(socket, function (mayWrite) {
         if (!mayWrite) {
           console.log("User doesn't have the right to edit.");
@@ -62,6 +64,7 @@ EditorSocketIOServer.prototype.addClient = function (socket) {
         (socket.ns && Object.keys(socket.ns.connected).length === 0) // socket.io >= 1.0
       ) {
         self.emit('empty-room');
+        console.log('empty-room')
       }
     });
 };
